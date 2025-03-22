@@ -2,14 +2,14 @@
 
 int main () {
 	int n = 0;
-	int c = 0;
+	int a = 1;
 	do {
-	  printf("Please enter a positive number: ");
+	  printf("Please enter a number: ");
 	  scanf("%d", &n);
-	} while (n < 0);	
+	} while (n < 0);
 	for (int row = 1; row <= n; row++) {
-	  for (int c = 1; c <= n; c++) {
-	    printf("*");
+	  for (int c = 1; c <= row; c++, a++) {
+	    printf("%d ", a);
 	  }
 	  printf("\n");
 	}
